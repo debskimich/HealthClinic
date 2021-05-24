@@ -1,13 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace kolos.DTOs
+namespace HealthClinic.BLL.DTOs
 {
     public class PrescriptionRequest
     {
+        
+        public int? IdPrescription { get; set; }
+
         [Required(ErrorMessage = "Date required")]
         public DateTime Date { get; set; }
         [Required(ErrorMessage = "DueDate required")]

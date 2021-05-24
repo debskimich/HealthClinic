@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace kolos.DTOs
+namespace HealthClinic.BLL.DTOs
 {
     public class PrescriptionDto
     {

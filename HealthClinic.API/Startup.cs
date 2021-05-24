@@ -1,24 +1,16 @@
-using kolos.Models;
-using kolos.Services;
+using HealthClinic.DAL.Contexts;
+using HealthClinic.BLL.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace kolos
 {
     public class Startup
     {
-        String connectionString = "Data Source=db-mssql;Initial Catalog=s17060;Integrated Security=True";
-
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -30,10 +22,11 @@ namespace kolos
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IDbContext, MsSqlContext>();
-            services.AddDbContext<s17060Context>(options =>
+            services.AddDbContext<HealthcareContext>(options =>
             {
-                options.UseSqlServer(connectionString);
+                options.UseSqlServer(Configuration["ConnectionString"]);
             });
+            
             services.AddControllers();
         }
 

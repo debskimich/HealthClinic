@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-#nullable disable
-
-namespace kolos.Models
+﻿namespace HealthClinic.BLL.Models
 {
     public partial class PrescriptionMedicament
     {
+        public int IdPrescriptionMedicament { get; set; }
         public int IdMedicament { get; set; }
         public int IdPrescription { get; set; }
         public int Dose { get; set; }

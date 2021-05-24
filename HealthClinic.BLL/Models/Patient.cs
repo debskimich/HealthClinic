@@ -1,21 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
 
-#nullable disable
-
-namespace kolos.Models
+namespace HealthClinic.BLL.Models
 {
-    public partial class Doctor
+    public partial class Patient
     {
-        public Doctor()
+        public Patient()
         {
             Prescriptions = new HashSet<Prescription>();
         }
 
-        public int IdDoctor { get; set; }
+        public int IdPatient { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Email { get; set; }
+        public DateTime Birthdate { get; set; }
 
         public virtual ICollection<Prescription> Prescriptions { get; set; }
     }

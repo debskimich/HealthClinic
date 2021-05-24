@@ -1,9 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 
-#nullable disable
-
-namespace kolos.Models
+namespace HealthClinic.BLL.Models
 {
     public partial class Medicament
     {

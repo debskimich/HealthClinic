@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "kolos", "kolos\kolos.csproj", "{97290351-EDF5-4C6B-8A72-652525282A7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HealthClinic.API", "HealthClinic.API\HealthClinic.API.csproj", "{97290351-EDF5-4C6B-8A72-652525282A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthClinic.BLL", "HealthClinic.BLL\HealthClinic.BLL.csproj", "{F9A3E881-B9A9-4796-8DB7-E3E0AA026D79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HealthClinic.DAL", "HealthClinic.DAL\HealthClinic.DAL.csproj", "{03C0DE0B-684D-4117-8B6F-09CE6987DFEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{97290351-EDF5-4C6B-8A72-652525282A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{97290351-EDF5-4C6B-8A72-652525282A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{97290351-EDF5-4C6B-8A72-652525282A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9A3E881-B9A9-4796-8DB7-E3E0AA026D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9A3E881-B9A9-4796-8DB7-E3E0AA026D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9A3E881-B9A9-4796-8DB7-E3E0AA026D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9A3E881-B9A9-4796-8DB7-E3E0AA026D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03C0DE0B-684D-4117-8B6F-09CE6987DFEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03C0DE0B-684D-4117-8B6F-09CE6987DFEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03C0DE0B-684D-4117-8B6F-09CE6987DFEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03C0DE0B-684D-4117-8B6F-09CE6987DFEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
